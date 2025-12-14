@@ -229,9 +229,7 @@ npm test
 - ✅ Test-driven development
 - ✅ Clean code architecture
 
-## Screenshots
 
-(Add screenshots of your application here)
 
 ## Deployment
 

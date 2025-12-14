@@ -1,0 +1,172 @@
+.sweet-card {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sweet-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+}
+
+.sweet-card-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sweet-card-header h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.sweet-category {
+  display: inline-block;
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--primary);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.sweet-card-body {
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.sweet-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.sweet-quantity {
+  font-size: 0.9rem;
+  color: var(--success);
+  margin-bottom: 1rem;
+}
+
+.sweet-quantity.out-of-stock {
+  color: var(--error);
+}
+
+.sweet-card-actions {
+  padding: 1.5rem;
+  background: rgba(15, 23, 42, 0.3);
+  margin-top: auto;
+}
+
+.purchase-section {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.quantity-input {
+  width: 60px;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-align: center;
+}
+
+.purchase-button {
+  flex: 1;
+  background: var(--gradient-primary);
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.purchase-button:hover:not(:disabled) {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+.purchase-button:disabled {
+  background: var(--surface-hover);
+  color: var(--text-secondary);
+  cursor: not-allowed;
+}
+
+.admin-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.edit-button,
+.delete-button,
+.restock-button {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  color: white;
+}
+
+.edit-button {
+  background: var(--warning);
+}
+
+.delete-button {
+  background: var(--error);
+}
+
+.restock-button {
+  background: var(--success);
+}
+
+.edit-button:hover,
+.delete-button:hover,
+.restock-button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.restock-section {
+  display: flex;
+  gap: 0.5rem;
+  grid-column: 1 / -1;
+  align-items: center;
+}
+
+.confirm-restock-button {
+  background: var(--success);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cancel-button {
+  background: var(--surface-hover);
+  color: var(--text);
+  border: none;
+  border-radius: 0.5rem;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
